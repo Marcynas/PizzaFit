@@ -1,1 +1,62 @@
+body {
+    display:block;
+    
+}
 
+nav {
+    display: flex;
+    height: 10%;
+    overflow: hidden;
+    justify-content: end;
+}
+#ikona{
+   
+}
+
+button {
+    align-self: center;
+    height: 50%;
+    width: 100px;
+    margin-left: 10px;
+}
+main{
+    height: 90%;
+    align-items: center;
+}
+
+footer {
+    height: 10%;
+}
+
+.deliojimas{
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.pasiulymai{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+#pasiulymas1{
+    width: 30%;
+}
+#pasiulymas2{
+    width: 30%;
+}
+#pasiulymas3{
+    width: 30%;
+}
+
+.ingredientai{
+    display: grid;
+    align-items: center;
+}
+
+#remelis{
+    border: black;
+    border-style: solid;
+}
