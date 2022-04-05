@@ -7,8 +7,4 @@
     document.getElementById("LoginButton").onclick = function () {
         location.href = "/Prisijungimas/prisijungti.html";
     };
-    document.getElementById("BackHomeButton").onclick = function () {
-        console.log("BackHomeButton");
-    };
-
   };
