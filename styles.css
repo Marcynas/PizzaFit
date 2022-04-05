@@ -23,7 +23,9 @@ button {
     justify-content: flex-start;
 }
 .navImg img{
-    width: 50px;
+    position: absolute;
+    margin-left: 20px;
+    width: 150px;
     justify-content: flex-start;
 }
 .navButton{
@@ -50,6 +52,10 @@ button {
     font-size: 2vw;
     user-select: none;
     cursor: pointer;
+    background-color: #D6E5FA;
+    border: #D6E5FA;
+    border-style: solid;
+    border-radius: 100px;
 }
 .deliojimas img:hover{
     cursor: pointer;
