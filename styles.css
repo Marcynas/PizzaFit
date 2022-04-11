@@ -108,8 +108,6 @@ button {
     font-size: 2vw;
 }
 
-
-
 footer {
     display: flex;
     height: 50px;
@@ -127,3 +125,15 @@ footer {
     padding: 10px;
 }
 
+
+.VirsutinisMygtukasIrNuoroda {
+    cursor: pointer;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 10px;
+    background-color: #FFDEFA;
+    border-radius: 100px;
+  }
