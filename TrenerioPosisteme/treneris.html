@@ -1,0 +1,75 @@
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PizzaFit</title>
+  <meta name="description" content="Trenerio langas">
+  <meta name="author" content="JTMJS komanda">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+  
+<body>
+  <!-- your content here... -->
+  <nav>
+    <div class="navImg">
+      <img id="ikona" src="/Icons/favicon.svg" ALT=" " >
+    </div>
+    <div class="navButton">
+      <a class="VirsutinisMygtukasIrNuoroda" id="List"> Pratimų sąrašas </a>
+      <a class="VirsutinisMygtukasIrNuoroda" href = "./Ikelti.html"> Įkelti pratimą </a>
+      <a class="VirsutinisMygtukasIrNuoroda" href = "/index.html"> Atsijungti </a>
+    </div>
+  </nav>
+  <main>
+ <div class="Sarasas">
+  <p>Pratimų sąrašas:</p>
+  <ol>
+      <li>Atsilenkimai <button>Šalinti</button> <button id="Redaguoti">Redaguoti</button>
+        <ul>
+          <li>Kiekis: 50</li>
+          <li>Trukmė: 5min</li>
+          <li>Taškai: 50</li>
+          <li> <img class="PratimoPav" src="https://sportuojantys.lt/wp-content/uploads/2021/03/4pPresas.-Atsilenkimai-iskelus-rankas-moterims.gif"> </li>
+        </ul>
+      </li>
+
+      <li>Super begimas <button>Šalinti</button> <button>Redaguoti</button>
+        <ul>
+          <li>Kiekis: 50</li>
+          <li>Trukmė: 5min</li>
+          <li>Taškai: 50</li>
+          <li> <img class="PratimoPav" src="https://cdn.dribbble.com/users/291221/screenshots/1618460/hipster_runner.gif"> </li>
+        </ul>
+      </li>
+      </li>
+      
+      <li>Pritupimai <button>Šalinti</button> <button>Redaguoti</button>
+        <ul>
+          <li>Kiekis: 50</li>
+          <li>Trukmė: 5min</li>
+          <li>Taškai: 50</li>
+          <li> <img class="PratimoPav" src="https://c.tenor.com/g6XQ1z_Op0QAAAAC/squats-body-weight-training.gif"> </li>
+        </ul>
+      </li>
+      </li>
+  </ol>
+ </div>
+  </main>
+  
+  
+  <script>
+      document.getElementById("List").onclick = function () {
+        location.href = "./treneris.html";
+      };
+      document.getElementById("Redaguoti").onclick = function () {
+        location.href = "./redaguoti.html";
+      };
+  </script>
+</body>
+</html>

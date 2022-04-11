@@ -160,3 +160,12 @@ a{
     list-style-type: none;
     margin: 10px;
   }
+
+.pratimoPav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    color: black;
+}
