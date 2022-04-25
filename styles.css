@@ -160,3 +160,17 @@ a{
     list-style-type: none;
     margin: 10px;
   }
+
+  .icon{
+    width: 30px;
+  }
+  .iconButton{
+    margin-top: 20px;
+    display: flex;
+    width: 130px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 100px;
+  }
