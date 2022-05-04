@@ -10,7 +10,22 @@ nav {
     overflow: hidden;
     background-color: #FFDEFA;
 }
-
+.navImg{
+  width: 50%;
+  justify-content: flex-start;
+}
+.navImg img{
+  position: absolute;
+  margin-left: 20px;
+  width: 100px;
+  justify-content: flex-start;
+}
+.navButton{
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  padding-right: 10px;
+}
 .login-page {
   width: 360px;
   padding: 8% 0 0;
@@ -67,6 +82,10 @@ a.button:hover,a.button:active,a.button:focus {
 }
 .form .register-form {
   display: none;
+}
+.messagea{
+  text-decoration: none;
+  font-size: 12px;
 }
 .container {
   position: relative;

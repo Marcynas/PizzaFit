@@ -15,12 +15,18 @@
 <body>
   <main>
   <nav>
-    <img id="ikona" src="/Icons/favicon.svg" ALT=" " >
-    <h1 id="SubmitLogin" >Registracija</h1>
+    <div class="navImg">
+      <img id="ikona" src="/Icons/favicon.svg" ALT=" " >
+    </div>
+    <div class="navButton">
+      <h1 id="SubmitLogin" >Registracija</h1>
+    </div>
   </nav>
 
   <div class="login-page" action="/">
     <div class="form">
+      <p class="messagea">Norėdami užsiregistruoti, <br>
+        suveskite savo registracijos duomenis</p> <br>
       <form onsubmit="PermestAtgal()" class="login-form">
         <form class="register-form">
           <input type="text" placeholder="vardas"/>

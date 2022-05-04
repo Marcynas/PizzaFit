@@ -18,6 +18,8 @@ button {
     margin-left: 10px;
     background-color: #D6E5FA;
     border-radius: 100px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .navImg{
@@ -154,11 +156,15 @@ a{
     width: 50%;
     list-style-type: none;
     background-color: #FFDEFA;
+    border-radius: 20px;
+    padding: 10px;
   }
   ul{
     background-color: #FFB2A6;
     list-style-type: none;
     margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
   }
 
 .pratimoPav{
@@ -168,4 +174,13 @@ a{
     width: 100px;
     padding: 10px;
     color: black;
+}
+
+p{
+    font-size: 1.5vw;
+}
+.add{
+    align-self: center;
+    color: black;
+    right: 0;
 }

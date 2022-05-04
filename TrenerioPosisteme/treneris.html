@@ -22,13 +22,13 @@
     </div>
     <div class="navButton">
       <a class="VirsutinisMygtukasIrNuoroda" id="List"> Pratimų sąrašas </a>
-      <a class="VirsutinisMygtukasIrNuoroda" href = "./Ikelti.html"> Įkelti pratimą </a>
       <a class="VirsutinisMygtukasIrNuoroda" href = "/index.html"> Atsijungti </a>
     </div>
   </nav>
   <main>
  <div class="Sarasas">
   <p>Pratimų sąrašas:</p>
+  <button id="Ikelti" class="Add">Įkelti pratimą</button>
   <ol>
       <li>Atsilenkimai <button>Šalinti</button> <button id="Redaguoti">Redaguoti</button>
         <ul>
@@ -69,6 +69,9 @@
       };
       document.getElementById("Redaguoti").onclick = function () {
         location.href = "./redaguoti.html";
+      };
+      document.getElementById("Ikelti").onclick = function () {
+        location.href = "./Ikelti.html";
       };
   </script>
 </body>
