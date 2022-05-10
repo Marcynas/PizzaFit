@@ -12,7 +12,6 @@ nav {
     background-color: #FFDEFA;
 }
 button {
-    align-self: center;
     height: 50%;
     width: 100px;
     margin-left: 10px;
@@ -183,4 +182,10 @@ p{
     align-self: center;
     color: black;
     right: 0;
+}
+
+.topimg{
+    height: 90%;
+    background-color: #FFDEFA;
+    border-radius: 100px;
 }

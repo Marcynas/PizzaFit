@@ -179,3 +179,10 @@ a{
     align-items: center;
     border-radius: 100px;
   }
+
+
+  .topimg{
+    height: 90%;
+    background-color: #FFDEFA;
+    border-radius: 100px;
+}
