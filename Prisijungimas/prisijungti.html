@@ -32,15 +32,42 @@
       <p class="messagea">Norėdami prisijungti, <br>
         suveskite savo prisijungimo duomenis</p> <br>
       <form class="login-form">
-        <input type="text" placeholder="prisijungimo vardas"/>
-        <input type="password" placeholder="slaptažodis"/>
-        <a href="/" class="button">prisijungti</a>
+        <input id="kas" type="text" placeholder="prisijungimo vardas"/>
+        <input id="koks" type="password" placeholder="slaptažodis"/>
+        <a  id="pris" onclick="Prisijungimas()" class="button">prisijungti</a>
         <p class="message">Neprisiregistrave? <a href="/Prisijungimas/registruotis.html">Susikurkite paskyrą</a></p>
       </form>
     </div>
   </div>
 
-  <script src="/scripts.js"></script>
+  <script>
+    function Prisijungimas() {
+      //get kas element
+      var kas = document.getElementById("kas");
+      //get koks element
+      var koks = document.getElementById("koks");
+      if (kas.value == "") {
+        alert("Prisijungimo vardas yra tuščias");
+        return;
+      }
+      if (koks.value == "") {
+        alert("Slaptažodis yra tuščias");
+        return;
+      }
+      
+      switch (kas.value) {
+        case "Treneris":
+          window.location.href = "/TrenerioPosisteme/treneris.html";
+          break;
+        case "Picerija":
+          window.location.href = "/PicerijosPosisteme/picerija.html";
+          break;
+        default:
+          window.location.href = "/KlientoPosisteme/klientas.html";
+          break;
+    }
+  }
+  </script>
 </main>
 </body>
 </html>

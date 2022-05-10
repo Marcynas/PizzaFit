@@ -10,7 +10,7 @@
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="../TrenerioPosisteme/styles.css">
 </head>
 
   
@@ -20,19 +20,21 @@
     <div class="navImg">
       <img id="ikona" src="/Icons/favicon.svg" ALT=" " >
     </div>
-    TRENERIS
     <div class="navButton">
-      <a class="VirsutinisMygtukasIrNuoroda" id="List"> Pratimų sąrašas </a>
-      <a class="VirsutinisMygtukasIrNuoroda" href = "/index.html"> Atsijungti </a>
+        <a class="VirsutinisMygtukasIrNuoroda" href="/KlientoPosisteme/klientas.html"> Atgal</a>
+        <a class="VirsutinisMygtukasIrNuoroda" href="/KlientoPosisteme/picuSarasas.html"> Picų sąrašas </a>
+        <a class="VirsutinisMygtukasIrNuoroda" href="/KlientoPosisteme/lyderiuLenta.html"> Lyderiu lenta </a>
+        <a class="VirsutinisMygtukasIrNuoroda" href="/index.html"> Atsijungti </a>
     </div>
   </nav>
   <main>
  <div class="Sarasas">
   <p>Pratimų sąrašas:</p>
-  <button id="Ikelti" class="Add">Įkelti pratimą</button>
   <ol>
-      <li>Atsilenkimai <button>Šalinti</button> <button id="Redaguoti">Redaguoti</button>
+      <li>Atsilenkimai <button id="Redaguoti">Įkelti tikrinimui</button>
         <ul>
+            <li>Būsena: ATMESTA (trūksta 5 atsilenkimų)</li>
+            <br>
           <li>Kiekis: 50</li>
           <li>Trukmė: 5min</li>
           <li>Taškai: 50</li>
@@ -40,8 +42,10 @@
         </ul>
       </li>
 
-      <li>Super begimas <button>Šalinti</button> <button>Redaguoti</button>
+      <li>Super begimas
         <ul>
+            <li>Būsena: PATVIRTINTA</li>
+            <br>
           <li>Kiekis: 50</li>
           <li>Trukmė: 5min</li>
           <li>Taškai: 50</li>
@@ -50,8 +54,10 @@
       </li>
       </li>
       
-      <li>Pritupimai <button>Šalinti</button> <button>Redaguoti</button>
+      <li>Pritupimai <button id="Redaguoti">Įkelti tikrinimui</button>
         <ul>
+            <li>Būsena: ATMESTA (trūksta 5 atsilenkimų)</li>
+            <br>
           <li>Kiekis: 50</li>
           <li>Trukmė: 5min</li>
           <li>Taškai: 50</li>
@@ -65,15 +71,6 @@
   
   
   <script>
-      document.getElementById("List").onclick = function () {
-        location.href = "./treneris.html";
-      };
-      document.getElementById("Redaguoti").onclick = function () {
-        location.href = "./redaguoti.html";
-      };
-      document.getElementById("Ikelti").onclick = function () {
-        location.href = "./Ikelti.html";
-      };
   </script>
 </body>
 </html>

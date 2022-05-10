@@ -8,11 +8,3 @@
         location.href = "/Prisijungimas/prisijungti.html";
     };
   };
-
-  function susideti() {
-    window.location.href = "/PicosSusidėjimas/picosdejimas.html";
-  }
-  function pasiulymas(){
-    alert("Norint tęsti, turite būti prisijungęs");
-    window.location.href = "/Prisijungimas/prisijungti.html";
-  }
