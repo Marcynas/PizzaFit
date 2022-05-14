@@ -10,6 +10,7 @@ nav {
     height: 50px;
     overflow: hidden;
     background-color: #FFDEFA;
+    border-radius: 20px;
 }
 button {
     height: 50%;
@@ -25,10 +26,10 @@ button {
     width: 50%;
     justify-content: flex-start;
 }
-.navImg img{
+#ikona{
     position: absolute;
     margin-left: 20px;
-    width: 100px;
+    width: 120px;
     justify-content: flex-start;
 }
 .navButton{
@@ -144,7 +145,7 @@ a{
 
   .Sarasas{
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -188,4 +189,15 @@ p{
     height: 90%;
     background-color: #FFDEFA;
     border-radius: 100px;
+}
+
+#uzsakdiv{
+    position: absolute;
+    visibility: hidden;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #FFDEFA;
+    border-radius: 20px;
 }

@@ -20,7 +20,6 @@
     <div class="navImg">
       <img id="ikona" src="/Icons/favicon.svg" ALT=" " >
     </div>
-    TRENERIS
     <div class="navButton">
       <a class="VirsutinisMygtukasIrNuoroda" id="List"> Pratimų sąrašas </a>
       <a class="VirsutinisMygtukasIrNuoroda" href = "/index.html"> Atsijungti </a>
@@ -31,7 +30,7 @@
   <p>Pratimų sąrašas:</p>
   <button id="Ikelti" class="Add">Įkelti pratimą</button>
   <ol>
-      <li>Atsilenkimai <button>Šalinti</button> <button id="Redaguoti">Redaguoti</button>
+      <li>Atsilenkimai <button id="Salinti">Šalinti</button> <button id="Redaguoti">Redaguoti</button>
         <ul>
           <li>Kiekis: 50</li>
           <li>Trukmė: 5min</li>
@@ -65,6 +64,12 @@
   
   
   <script>
+      document.getElementById("Salinti").addEventListener("click", function(){
+        if(confirm('Ar tikrai norite pašalinti?')){
+          document.getElementById("Salinti").parentElement.remove();
+        }
+        
+      });
       document.getElementById("List").onclick = function () {
         location.href = "./treneris.html";
       };

@@ -42,7 +42,7 @@
     <input type="file" id="Failas" name="Failas" value=""><br/>
     <img class="PratimoPav" src="https://sportuojantys.lt/wp-content/uploads/2021/03/4pPresas.-Atsilenkimai-iskelus-rankas-moterims.gif"> </li>
   </form>
-  <button id="issaugoti"> Išsaugoti </button>
+  <button id="issaugoti"> Išsaugoti </button><br/>
   <button id="atsaukti"> Atšaukti </button>
   </div>
   </main>
@@ -50,7 +50,9 @@
   
   <script>
       document.getElementById("issaugoti").onclick = function () {
-        location.href = "./treneris.html";
+        if(confirm('Aretikrai norite išsaugoti?')){
+          location.href = "./treneris.html";
+        }
       };
       document.getElementById("atsaukti").onclick = function () {
         location.href = "./treneris.html";

@@ -10,11 +10,12 @@ nav {
     height: 50px;
     overflow: hidden;
     background-color: #FFDEFA;
+    border-radius: 20px;
 }
-button {
+.mygtukasPas {
     align-self: center;
-    height: 50%;
-    width: 140px;
+    height: 50px;
+    width: 150px;
     margin-left: 10px;
     background-color: #D6E5FA;
     border-radius: 100px;
@@ -27,10 +28,11 @@ button {
 }
 .navImg img{
     position: absolute;
-    margin-left: 20px;
     width: 100px;
+    margin-left: 20px;
     justify-content: flex-start;
 }
+
 .navButton{
     display: flex;
     width: 50%;

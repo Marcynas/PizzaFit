@@ -1,0 +1,13 @@
+• padidinti picų mygtukus                                   +
+• suapvalinti info juostos kampus                           +
+• redagavime atlipdyti mygtukus                             +
+• prieš šalinant paklausti ar tikrai                        +
+• padidinti logo visuose languose                           +
+• sumažinti tarpą tarp info juostos ir posistemių           +
+• sunumeruoti lyderius                                      +
+• pademostruoti užsakymą su daug picų                       +
+
+• pademonstruoti kaip įkelti pratimą
+• parodyti jog pica priimta gaminimui (padaryti statusą)
+
+• ištaisyti gramatines klaidas:)
