@@ -30,10 +30,16 @@
   <main>
  <div class="Sarasas">
   <p>Pratimų sąrašas:</p>
-  <ol>
-      <li>Atsilenkimai <button id="Redaguoti">Įkelti tikrinimui</button>
+  
+  <ol style="text-align: center;">
+    <p style="width: 100%;">Laukiamo kol bus atlikti visi pratimai</p>
+    
+    <img class="imgpasiulymas" src="https://www.downloadclipart.net/large/cheese-pizza-png-clipart.png" alt=""></ol>
+    <ol>
+   
+      <li>Atsilenkimai <button onclick="move()">Įkelti tikrinimui</button> <input id="file" style="visibility: hidden;" type="file"><div class="lds-circle"><div></div></div> </li>
         <ul>
-            <li>Būsena: ATMESTA (trūksta 5 atsilenkimų)</li>
+            <li id="busena1">Būsena: ATMESTA (trūksta 5 atsilenkimų)</li>
             <br>
           <li>Kiekis: 50</li>
           <li>Trukmė: 5min</li>
@@ -54,9 +60,48 @@
       </li>
       </li>
       
-      <li>Pritupimai <button id="Redaguoti">Įkelti tikrinimui</button>
+      <li>Pritupimai <button onclick="move2()">Įkelti tikrinimui</button> <div class="lds-circle"><div></div></div> </li>
         <ul>
-            <li>Būsena: ATMESTA (trūksta 5 atsilenkimų)</li>
+            <li id="busena2">Būsena: ATMESTA (trūksta 5 pritupimų)</li>
+            <br>
+          <li>Kiekis: 50</li>
+          <li>Trukmė: 5min</li>
+          <li>Taškai: 50</li>
+          <li> <img class="PratimoPav" src="https://c.tenor.com/g6XQ1z_Op0QAAAAC/squats-body-weight-training.gif"> </li>
+        </ul>
+      </li>
+      </li>
+  </ol>
+  
+  <ol>
+    <button onclick="apmoketi()" style="width: 100%;">Apmokėti už picą</button><img style="margin-left: 20%;" class="imgpasiulymas" src="https://www.downloadclipart.net/large/cheese-pizza-png-clipart.png" alt=""></ol>
+  <ol>
+      <li>Atsilenkimai 
+        <ul>
+            <li>Būsena:  PATVIRTINTA</li>
+            <br>
+          <li>Kiekis: 50</li>
+          <li>Trukmė: 5min</li>
+          <li>Taškai: 50</li>
+          <li> <img class="PratimoPav" src="https://sportuojantys.lt/wp-content/uploads/2021/03/4pPresas.-Atsilenkimai-iskelus-rankas-moterims.gif"> </li>
+        </ul>
+      </li>
+
+      <li>Super begimas
+        <ul>
+            <li>Būsena: PATVIRTINTA</li>
+            <br>
+          <li>Kiekis: 50</li>
+          <li>Trukmė: 5min</li>
+          <li>Taškai: 50</li>
+          <li> <img class="PratimoPav" src="https://cdn.dribbble.com/users/291221/screenshots/1618460/hipster_runner.gif"> </li>
+        </ul>
+      </li>
+      </li>
+      
+      <li>Pritupimai 
+        <ul>
+            <li>Būsena: PATVIRTINTA</li>
             <br>
           <li>Kiekis: 50</li>
           <li>Trukmė: 5min</li>
@@ -71,11 +116,43 @@
   
   
   <script>
-  var redaguoti = document.getElementById("Redaguoti");
-  //windows item select
-  redaguoti.addEventListener("click", function(){
-    
-  });
+  function apmoketi(){
+    location.href = "/KlientoPosisteme/apmokėjimas.html";
+  }
+  
+function move() {
+  //open file explorer
+  var fileInput = document.getElementById('file');
+  fileInput.click();
+  var busena1 = document.getElementById('busena1');
+  busena1.innerHTML = "Būsena: TIKRINAMA";
+  //get item by class name
+  var item = document.getElementsByClassName('lds-circle');
+  //make it visible for 5sec
+  item[0].style.visibility = 'visible';
+  setTimeout(function(){
+    busena1.innerHTML = "Būsena: ATMESTA (trūksta 5 atsilenkimų)";
+    item[0].style.visibility = 'hidden';
+  }, 5000);
+}
+function move2() {
+  //open file explorer
+  var fileInput = document.getElementById('file');
+  fileInput.click();
+  //get busena2
+  var busena1 = document.getElementById('busena2');
+  busena1.innerHTML = "Būsena: TIKRINAMA";
+  //get item by class name
+  var item = document.getElementsByClassName('lds-circle');
+  //make it visible for 5sec
+  //set busena1 text to TIKRINAMA
+  item[1].style.visibility = 'visible';
+  setTimeout(function(){
+    busena1.innerHTML = "Būsena: ATMESTA (trūksta 5 pritupimų)";
+    item[1].style.visibility = 'hidden';
+  }, 5000);
+}
+
   </script>
 </body>
 </html>

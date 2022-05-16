@@ -1,0 +1,48 @@
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PizzaFit</title>
+  <meta name="description" content="prisijungimo langas">
+  <meta name="author" content="JTMJS komanda">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/Prisijungimas/styles.css">
+</head>
+
+  
+<body>
+  <!-- your content here... -->
+  <main>
+  <nav>
+    <div class="navImg">
+      <img id="ikona" src="/Icons/favicon.svg" ALT=" " >
+      
+    </div>
+    <div class="navButton">
+      <h1 id="SubmitLogin" >Apmokėjimas</h1>
+    </div>
+  </nav>
+
+  <div class="login-page">
+    <div class="form">
+      <form class="login-form">
+        <input id="kas" type="text" placeholder="Adresas"/>
+        <p>Suma: 5eur</p>
+        <a  id="pris" onclick="Apmokėjimas()" class="button">Apmokėjimas per banką</a>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function Apmokėjimas() {
+      window.open('https://www.swedbank.lt', '_blank');
+      window.location.href = "/KlientoPosisteme/picuSarasas.html";
+  }
+  </script>
+</main>
+</body>
+</html>

@@ -8,3 +8,8 @@
         location.href = "/Prisijungimas/prisijungti.html";
     };
   };
+
+  function susideti(){
+    location.href = "/PicosSusidėjimas/picosdejimas.html";
+  }
+

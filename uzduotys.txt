@@ -7,7 +7,7 @@
 • sunumeruoti lyderius                                      +
 • pademostruoti užsakymą su daug picų                       +
 
-• pademonstruoti kaip įkelti pratimą
-• parodyti jog pica priimta gaminimui (padaryti statusą)
+• pademonstruoti kaip įkelti pratimą                        + 
+• parodyti jog pica priimta gaminimui (padaryti statusą)    +
 
 • ištaisyti gramatines klaidas:)

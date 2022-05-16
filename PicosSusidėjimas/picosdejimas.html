@@ -15,20 +15,84 @@
 
 <body vlink="#000">
   <!-- your content here... -->
+  <nav>
+    <div class="navImg">
+      <img id="ikona" src="/Icons/favicon.svg" ALT=" " >
+    </div>
+    <div class="navButton">
+      <a class="VirsutinisMygtukasIrNuoroda" href="/KlientoPosisteme/klientas.html"><img class="topimg" src="/Icons/icon_bck.svg"> Atgal </a>
+      <a class="VirsutinisMygtukasIrNuoroda" href="/KlientoPosisteme/pratimuSarasas.html"><img class="topimg" src="/Icons/icon_sp.svg"> Pratimų sąrašas </a>
+      <a class="VirsutinisMygtukasIrNuoroda" href="/KlientoPosisteme/picuSarasas.html"><img class="topimg" src="/Icons/icon_pc.svg"> Picų sąrašas </a>
+      <a class="VirsutinisMygtukasIrNuoroda" href="/KlientoPosisteme/lyderiuLenta.html"><img class="topimg" src="/Icons/icon_lb.svg"> Lyderių lenta</a>
+      <a class="VirsutinisMygtukasIrNuoroda" href="/index.html">Atsijungti </a>
+    </div>
+  </nav>
   <main>
-  <div>
-      NEPADARYTA DAR
-  </div>
-   <!--
-  <footer>
-    <b id="PizzaFitName">PizzaFit</b>
-    <div class="kontaktai">Kontaktinis tel. nr.: 861114488 <br />
-      El. paštas: pagalba@pizzafit.lt <br /> <br /></div>
-  </footer>
-   -->
-</main>
-  <script src="/scripts.js">
+  <div class="deliojimas">
 
+      <div class="row">
+        <div class="column">
+          <h2>Ingredientai</h2>
+          <p>Mėsa</p>
+          <form action="">
+            <input type="checkbox" name="ingredientai" value="salami">Salami<br>
+            <input type="checkbox" name="ingredientai" value="salami">Kumpis<br>
+            <input type="checkbox" name="ingredientai" value="salami">Faršas<br>
+            <input type="checkbox" name="ingredientai" value="salami">Vištiena<br>
+          </form>
+          <p>Padažai</p>
+          <form action="">
+            <input type="checkbox" name="ingredientai" value="salami">Pomidorų padažas<br>
+            <input type="checkbox" name="ingredientai" value="salami">Česnakinis<br>
+            <input type="checkbox" name="ingredientai" value="salami">Garstyčios<br>
+            <input type="checkbox" name="ingredientai" value="salami">Aštrus<br>
+          </form>
+          <p>Visą kitą</p>
+          <form action="">
+            <input type="checkbox" name="ingredientai" value="salami">Pievagrybiai<br>
+            <input type="checkbox" name="ingredientai" value="salami">Paprika<br>
+            <input type="checkbox" name="ingredientai" value="salami">Svogūnai<br>
+            <input type="checkbox" name="ingredientai" value="salami">Aitrios paprikos<br>
+            <input type="checkbox" name="ingredientai" value="salami">Alyvuogės<br>
+            <input type="checkbox" name="ingredientai" value="salami">Alyvuogės<br>
+          </form>
+
+        </div>
+        <div class="column">
+          <div class="deliojimas">
+            <img src="https://pizzadoro.hu/wp-content/uploads/elementor/thumbs/paradicsomos-alap-jo-p3oecneixp4edk945s5l2qtgk554k2kxnnlln929wg.png">
+          </div>
+        </div>
+        <div class="column">
+          <h2>Dydis/Forma</h2>
+          
+          <p>Dydis</p>
+          <form action="">
+            <select id="Dydis" name="dydis" >
+              <option value="Maža">Maža</option>
+              <option value="Vidutinė">Vidutinė</option>
+              <option value="Didelė">Didelė</option>
+              <option value="Ekstra">Ekstra didelė</option>
+            </select>
+          </form>
+
+          <p>Forma</p>
+          <form action="">
+            <select id="Forma" name="forma">
+              <option value="Apvali">Apvali</option>
+              <option value="Kvadratinė">Kvadratinė</option>
+            </select>
+          </form>
+          <button id="testi" onclick="">Tęsti</button>
+        </div>
+      </div>
+  </div>
+</main>
+  <script>
+    var testi = document.getElementById("testi");
+    testi.addEventListener("click", function(){
+      window.location.href = "./pratimopasirinkimas.html";
+    });
   </script>
 </body>
 </html>
