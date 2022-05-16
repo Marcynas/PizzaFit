@@ -20,8 +20,8 @@
       <img id="ikona" src="/Icons/favicon.svg" ALT=" " >
     </div>
     <div class="navButton">
-      <a class="VirsutinisMygtukasIrNuoroda" id="RegisterButton"> Registruotis </a>
-      <a class="VirsutinisMygtukasIrNuoroda" id="LoginButton"> Prisijungti </a>
+      <a href="/Prisijungimas/registruotis.html" class="VirsutinisMygtukasIrNuoroda" id="RegisterButton"> Registruotis </a>
+      <a href="/Prisijungimas/prisijungti.html" class="VirsutinisMygtukasIrNuoroda" id="LoginButton"> Prisijungti </a>
     </div>
   </nav>
   <main>
@@ -32,10 +32,10 @@
           <h2>Ingredientai</h2>
           <p>Mėsa</p>
           <form action="">
-            <input type="checkbox" name="ingredientai" value="salami">Salami<br>
-            <input type="checkbox" name="ingredientai" value="salami">Kumpis<br>
-            <input type="checkbox" name="ingredientai" value="salami">Faršas<br>
-            <input type="checkbox" name="ingredientai" value="salami">Vištiena<br>
+            <input id="Salami" type="checkbox" name="Salami" value="Salami">Salami<br>
+            <input id="Kumpis" type="checkbox" name="Kumpis" value="Kumpis">Kumpis<br>
+            <input type="checkbox" name="Faršas" value="Faršas">Faršas<br>
+            <input type="checkbox" name="Vištiena" value="`Vištiena">Vištiena<br>
           </form>
           <p>Padažai</p>
           <form action="">
@@ -56,8 +56,10 @@
 
         </div>
         <div class="column">
-          <div class="deliojimas">
+          <div class="parent">
             <img src="https://pizzadoro.hu/wp-content/uploads/elementor/thumbs/paradicsomos-alap-jo-p3oecneixp4edk945s5l2qtgk554k2kxnnlln929wg.png">
+            <img class="image2" id="salamiImg" src="http://assets.stickpng.com/images/5c0798ce2c6641059597e35f.png" alt="">
+            <img class="image2" id="kumpisImg" src="https://pngimg.com/uploads/pork/pork_PNG33.png" alt="">
           </div>
         </div>
         <div class="column">
@@ -91,7 +93,28 @@
       alert("Norint tęsti, turite būti prisijungęs");
     window.location.href = "/Prisijungimas/prisijungti.html";
     });
-
+        //if salami is marked show image
+        var salami = document.querySelector("#Salami");
+    var salamiImg = document.getElementById("salamiImg");
+    salami.addEventListener("click", function(){
+      if(salami.checked){
+        salamiImg.style.display = "flex";
+      }
+      else{
+        salamiImg.style.display = "none";
+      }
+    });
+    //if kumpis is marked show image
+    var kumpis = document.querySelector("#Kumpis");
+    var kumpisImg = document.getElementById("kumpisImg");
+    kumpis.addEventListener("click", function(){
+      if(kumpis.checked){
+        kumpisImg.style.display = "flex";
+      }
+      else{
+        kumpisImg.style.display = "none";
+      }
+    });
   </script>
 </body>
 </html>
