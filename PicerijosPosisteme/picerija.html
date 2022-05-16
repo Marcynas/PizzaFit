@@ -30,7 +30,7 @@
       <ol>
 
         <div style="overflow-y: scroll; height:170px;  border: 10px #FFDEFA solid;" >
-          <div style="height: 40px; width:48%; position:absolute; background-color:#FFDEFA "> Užsakymas 1 <button id="atmesti">Atmesti</button> <button id="priimti">Priimti</button> <button id="perz">Peržiūrėti</button> </div>
+          <div  style="height: 40px; width:48%; position:absolute; background-color:#FFDEFA "> <b  id="uzsak1">Užsakymas 1 </b> <button id="atmesti">Atmesti</button> <button id="priimti">Priimti</button> <button id="perz">Peržiūrėti</button> </div>
           <li style="margin-top:40px" id="uzsakymas">
             <ul>MEKSIKIETIŠKA
               <li>Kiekis: 1</li>
@@ -50,17 +50,17 @@
           </ul>
         </li>
         </div>
-        Užsakymas 2 <button>Atmesti</button> <button>Priimti</button>
+        <b>Užsakymas 2 (Užsakymas priimtas)</b>
         <div style="overflow-y: scroll; height:170px; border: 10px #FFDEFA solid;"">
           <li> 
-            <ul> PEPERONI
+            <ul> PEPERONI 
               <li>Kiekis: 1</li>
               <li>Pristatymo atdresas: Studentų g. 3</li>
               <li> <img class="PratimoPav" src="https://middle.swampscottps.org/wp-content/uploads/sites/2/2017/09/pizza_adven_zestypepperoni.png"> </li>
             </ul>
           </li>
         </div>
-        Užsakymas 3 <button>Atmesti</button> <button>Priimti</button>
+        <b>Užsakymas 3</b> <button>Atmesti</button> <button>Priimti</button>
         <div style="overflow-y: scroll; height:170px; border: 10px #FFDEFA solid;"">
           <li>
             <ul>SŪRIO 
@@ -109,6 +109,14 @@
           //make uzsakdiv visible
           document.getElementById("uzsakdiv").style.visibility = "hidden";
         });
+        document.getElementById("priimti").addEventListener("click", function(){
+          //make uzsakdiv visible
+          document.getElementById("atmesti").style.visibility = "hidden";
+          document.getElementById("priimti").style.visibility = "hidden";
+          //replace priimti with (Užsakymas priimtas)
+          document.getElementById("uzsak1").innerHTML += "(Užsakymas priimtas)";
+        });
+
   </script>
 </body>
 </html>

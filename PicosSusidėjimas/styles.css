@@ -1,9 +1,15 @@
 body {
     background-color: #FFB2A6;
     font-family: 'Helvetica', 'Arial', sans-serif;
+    align-items: center;
+    justify-content: center;
 }
 main {
     height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 nav {
     display: flex;
@@ -14,9 +20,9 @@ nav {
 }
 button {
     align-self: center;
+    text-align: center;
     height: 50%;
     width: 140px;
-    margin-left: 10px;
     background-color: #D6E5FA;
     border-radius: 100px;
     cursor: pointer;
@@ -145,16 +151,6 @@ a{
     padding: 10px;
     color: black;
   }
-  ol{
-    width: 50%;
-    list-style-type: none;
-    background-color: #FFDEFA;
-  }
-  ul{
-    background-color: #FFB2A6;
-    list-style-type: none;
-    margin: 10px;
-  }
 
   .icon{
     width: 30px;
@@ -172,9 +168,9 @@ a{
 
   .pratimoPav{
     display: flex;
-    justify-content: end;
     align-items: center;
-    width: 100px;
+    width: 80px;
+    height: 200px;
     padding: 10px;
     color: black;
 }
@@ -189,13 +185,65 @@ a{
 .column {
     float: left;
     width: 30vw;
+    text-align: center;
     align-items: center;
     justify-content: center;
+
   }
   
   /* Clear floats after the columns */
   .row:after {
-      align-items: center;
     display: table;
     clear: both;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form{
+      display: block;
+      margin-left: 10vw;
+      text-align: start;
+  }
+
+  ol{
+    width: 50%;
+    list-style-type: none;
+    background-color: #FFDEFA;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  ul{
+    background-color: #FFB2A6;
+    list-style-type: none;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .pratimai{
+    display: inline-flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: black;
+  }
+
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image2 {
+    position: absolute;
+    display: none;
+    top: 40px;
+    left: 60px;
   }

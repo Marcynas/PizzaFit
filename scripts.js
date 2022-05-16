@@ -12,7 +12,14 @@
   function susideti() {
     window.location.href = "/PicosSusidėjimas/picosdejimas.html";
   }
+  function susidetiSvec(){
+    window.location.href = "/PicosSusidėjimas/picosdejimaSvecias.html";
+  }
   function pasiulymas(){
     alert("Norint tęsti, turite būti prisijungęs");
     window.location.href = "/Prisijungimas/prisijungti.html";
+  }
+
+  function pasiulymasMok(){
+    window.location.href = "/PicosSusidėjimas/pratimopasirinkimas.html";
   }

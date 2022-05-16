@@ -143,6 +143,9 @@ footer {
     background-color: #FFDEFA;
     border-radius: 100px;
   }
+
+
+  
 a{
     color: black;
 }
@@ -207,3 +210,14 @@ a{
     height: 30px;
     background-color: green;
   }
+  
+  .mygtukasPas {
+    align-self: center;
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    background-color: #D6E5FA;
+    border-radius: 100px;
+    cursor: pointer;
+    user-select: none;
+}
