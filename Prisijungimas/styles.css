@@ -36,7 +36,8 @@ nav {
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #FFB2A6;
+  border-radius: 20px;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
@@ -69,9 +70,13 @@ a.button {
   transition: all 0.3 ease;
   cursor: pointer;
   border-radius: 100px;
+  border-color: #000000;
+  border-width: 1px;
+  border-style: solid;
 }
 a.button:hover,a.button:active,a.button:focus {
   background: #b8d4fc;
+
 }
 .form .message {
   margin: 15px 0 0;
