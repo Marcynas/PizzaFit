@@ -1,0 +1,61 @@
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PizzaFit</title>
+  <meta name="description" content="Trenerio langas">
+  <meta name="author" content="JTMJS komanda">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+  
+<body>
+  <!-- your content here... -->
+  <nav>
+    <div class="navImg">
+      <img id="ikona" src="/Icons/favicon.svg" ALT=" " >
+    </div>
+    <div class="navButton">
+      <a class="VirsutinisMygtukasIrNuoroda" href="./" > Atgal </a>
+      <a class="VirsutinisMygtukasIrNuoroda" href = "/index.html"> Atsijungti </a>
+    </div>
+  </nav>
+  <main>
+ <div class="Sarasas">
+  <p>Redaguoti profilį</p>
+  <form action="">
+    <label for="Pavadinimas">Vardas:</label><br/>
+    <input type="text" id="Pavadinimas" name="Pavadinimas" value="Tadas"> <br/>
+    <label for="Kiekis">Pavardė:</label><br/>
+    <input type="text" id="Kiekis" name="Kiekis" value="Tadauskas"><br/>
+    <label for="Trukme">El. paštas:</label><br/>
+    <input type="text" id="Trukme" name="Trukme" value="Tad@mail.com"><br/>
+    <label for="Trukme">Slaptažodis:</label><br/>
+    <input type="password" id="Trukme" name="Trukme" value="Slapta"><br/>
+  </form>
+  <button id="issaugoti"> Išsaugoti </button><br/>
+  <button id="atsaukti"> Atšaukti </button>
+  </div>
+  </main>
+  
+  
+  <script>
+      document.getElementById("issaugoti").onclick = function () {
+        if(confirm('Ar tikrai norite išsaugoti?')){
+          location.href = "./";
+        }
+      };
+      document.getElementById("atsaukti").onclick = function () {
+        location.href = "./";
+      };
+      document.getElementById("List").onclick = function () {
+        location.href = "./";
+      };
+  </script>
+</body>
+</html>
