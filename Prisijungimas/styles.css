@@ -80,12 +80,12 @@ a.button:hover,a.button:active,a.button:focus {
 }
 .form .message {
   margin: 15px 0 0;
-  color: #b3b3b3;
+  color: black;
   font-size: 12px;
 }
 .form .message a {
-  color: #b8d4fc;
-  text-decoration: none;
+  color: black;
+  text-decoration: underline;
 }
 .form .register-form {
   display: none;
